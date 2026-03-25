@@ -41,44 +41,7 @@ This project demonstrates a **multimodal AI system** that bridges computer visio
 
 # 🏗️ Architecture
 
-┌─────────────────────────────────────────────────────────────────┐
-│ Webcam Input │
-│ (Real-time video stream) │
-└─────────────────────────────────────────────────────────────────┘
-│
-▼
-┌─────────────────────────────────────────────────────────────────┐
-│ YOLOv8 Object Detection │
-│ (Frame-by-frame object identification) │
-│ • 80+ COCO classes │
-│ • Confidence scoring │
-│ • Bounding box generation │
-└─────────────────────────────────────────────────────────────────┘
-│
-▼
-┌─────────────────────────────────────────────────────────────────┐
-│ ByteTrack Tracker │
-│ (Persistent ID assignment across frames) │
-│ • Kalman filter prediction │
-│ • Hungarian algorithm matching │
-│ • Lost track buffer │
-└─────────────────────────────────────────────────────────────────┘
-│
-┌───────────────┴───────────────┐
-▼ ▼
-┌───────────────────────────┐ ┌───────────────────────────┐
-│ Visual Annotation │ │ Audio Feedback │
-│ • Bounding boxes │ │ • New object detection │
-│ • Unique IDs (#1, #2) │ │ • Cooldown mechanism │
-│ • Confidence scores │ │ • Natural language │
-│ • FPS counter │ │ • Non-blocking thread │
-└───────────────────────────┘ └───────────────────────────┘
-│
-▼
-┌─────────────────────────────────────────────────────────────────┐
-│ Display Output │
-│ Annotated video with voice feedback │
-└─────────────────────────────────────────────────────────────────┘
+<img width="497" height="527" alt="Arch" src="https://github.com/user-attachments/assets/6bc7beb0-d0e6-42b5-a0be-463b551c9aa2" />
 
 # 🛠️ Tech Stack
 Category              Technologies
