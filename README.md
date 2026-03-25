@@ -32,10 +32,12 @@ This project demonstrates a **multimodal AI system** that bridges computer visio
 * pyttsx3>=2.90
 *  pyyaml>=6.0
 
-# Controls
-Key         Action
-```q```     Quit application
-```s```     Toggle voice feedback on/off
+## 🎮 Controls
+
+| Key | Action |
+|-----|--------|
+| `q` | Quit application |
+| `s` | Toggle voice feedback ON/OFF |
 
 # 🏗️ Architecture
 
