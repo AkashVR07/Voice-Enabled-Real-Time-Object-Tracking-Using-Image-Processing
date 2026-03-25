@@ -42,29 +42,43 @@ This project demonstrates a **multimodal AI system** that bridges computer visio
 # 🏗️ Architecture
 
 ┌─────────────────────────────────────────────────────────────────┐
-│                        Webcam Input                             │
+│ Webcam Input │
+│ (Real-time video stream) │
 └─────────────────────────────────────────────────────────────────┘
-                                │
-                                ▼
+│
+▼
 ┌─────────────────────────────────────────────────────────────────┐
-│                    YOLOv8 Object Detection                      │
-│                   (Real-time frame processing)                  │
+│ YOLOv8 Object Detection │
+│ (Frame-by-frame object identification) │
+│ • 80+ COCO classes │
+│ • Confidence scoring │
+│ • Bounding box generation │
 └─────────────────────────────────────────────────────────────────┘
-                                │
-                                ▼
+│
+▼
 ┌─────────────────────────────────────────────────────────────────┐
-│                     ByteTrack Tracker                           │
-│            (Persistent ID assignment across frames)             │
+│ ByteTrack Tracker │
+│ (Persistent ID assignment across frames) │
+│ • Kalman filter prediction │
+│ • Hungarian algorithm matching │
+│ • Lost track buffer │
 └─────────────────────────────────────────────────────────────────┘
-                                │
-                ┌───────────────┴───────────────┐
-                ▼                               ▼
-┌───────────────────────────┐     ┌───────────────────────────┐
-│   Visual Annotation       │     │   Audio Feedback          │
-│   • Bounding boxes        │     │   • New object detection  │
-│   • Unique IDs            │     │   • Cooldown mechanism    │
-│   • Confidence scores     │     │   • Natural language      │
-└───────────────────────────┘     └───────────────────────────┘
+│
+┌───────────────┴───────────────┐
+▼ ▼
+┌───────────────────────────┐ ┌───────────────────────────┐
+│ Visual Annotation │ │ Audio Feedback │
+│ • Bounding boxes │ │ • New object detection │
+│ • Unique IDs (#1, #2) │ │ • Cooldown mechanism │
+│ • Confidence scores │ │ • Natural language │
+│ • FPS counter │ │ • Non-blocking thread │
+└───────────────────────────┘ └───────────────────────────┘
+│
+▼
+┌─────────────────────────────────────────────────────────────────┐
+│ Display Output │
+│ Annotated video with voice feedback │
+└─────────────────────────────────────────────────────────────────┘
 
 # 🛠️ Tech Stack
 Category              Technologies
