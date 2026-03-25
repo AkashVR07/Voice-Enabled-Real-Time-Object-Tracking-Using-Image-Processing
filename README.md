@@ -7,12 +7,12 @@ To develop a real-time AI-powered system that combines object detection with voi
 This project demonstrates a **multimodal AI system** that bridges computer vision and voice interaction. It detects and tracks multiple objects in real-time from a webcam feed, assigns persistent unique IDs to each object, and provides intelligent voice announcements when new objects enter the scene.
 
 # Key Features
-- *🎯 Real-Time Multi-Object Tracking** — YOLOv8x + ByteTrack for persistent ID assignment
-- *🎙️ Intelligent Voice Feedback** — Smart announcements with cooldown mechanism (no spam)
-- *⚡ Optimized Performance** — 30+ FPS on consumer hardware with CUDA acceleration
-- *🎮 Interactive Controls** — Toggle audio on/off with 's' key, real-time metrics overlay
-- *⚙️ Configurable** — YAML configuration for easy parameter tuning
-- *Press 's' to toggle audio feedback | 'q' to quit**
+- **🎯 Real-Time Multi-Object Tracking** — YOLOv8x + ByteTrack for persistent ID assignment
+- **🎙️ Intelligent Voice Feedback** — Smart announcements with cooldown mechanism (no spam)
+- **⚡ Optimized Performance** — 30+ FPS on consumer hardware with CUDA acceleration
+- **🎮 Interactive Controls** — Toggle audio on/off with 's' key, real-time metrics overlay
+- **⚙️ Configurable** — YAML configuration for easy parameter tuning
+- **Press 's' to toggle audio feedback | 'q' to quit**
 
 # Prerequisites
 - Python 3.8 or higher
