@@ -23,14 +23,14 @@ This project demonstrates a **multimodal AI system** that bridges computer visio
 2. Run the application - ```python src/main.py```
 
 # requirements.txt
-torch>=2.0.0
-torchvision>=0.15.0
-opencv-python>=4.8.0
-ultralytics>=8.0.0
-supervision>=0.18.0
-numpy>=1.24.0
-pyttsx3>=2.90
-pyyaml>=6.0
+* torch>=2.0.0
+* torchvision>=0.15.0
+* opencv-python>=4.8.0
+* ultralytics>=8.0.0
+* supervision>=0.18.0
+* numpy>=1.24.0
+* pyttsx3>=2.90
+*  pyyaml>=6.0
 
 # Controls
 Key         Action
